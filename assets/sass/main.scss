@@ -1,10 +1,13 @@
+@import "./utils/variables";
+
+
 body{
     margin:auto;
 }
 
 .back_green {
-    color: #fdcb46;
-    background-color: #579c87;
+    color: $color-text;
+    background-color: $color-background;
 }
 .ctn_global{
     margin: 0 auto;
