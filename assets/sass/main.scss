@@ -6,7 +6,10 @@
 body{
     margin:auto;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .back_green {
     color: $color-text;
     background-color: $color-background-primary;
@@ -25,14 +28,17 @@ body{
 .ctn_mid{
     display:flex;
     flex-wrap: wrap;
-    padding:  5% 20%;
+    justify-content: space-between;
+    padding: 5%;
 }
 .menu{
     padding: 10px 20px;
     width: 33%;
-    height: 300px;
+    height: 24.375rem;
     justify-content: stretch;
-    margin: 10px 10px;
+    margin: 5% 5%;
+    border: 1px solid red ;
+    box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
 }
 footer {
     display:flex;
