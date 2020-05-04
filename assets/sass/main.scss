@@ -9,12 +9,13 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    
 }
-.back_green {
-    color: $color-text;
-    background-color: $color-background-primary;
+.background--primary {
+    color: map-get($color-text , primary);
+    background-color: map-get($color-background, primary);
 }
-.ctn_global{
+.ctn{
     margin: 0 auto;
     max-width: 800px;
 }
@@ -25,21 +26,29 @@ a{
     text-align:center;
     margin: 0;
 }
-.ctn_mid{
+.ctn__mid{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5%;
 }
 .menu{
-    padding: 10px 20px;
-    width: 33%;
-    height: 24.375rem;
-    justify-content: stretch;
-    margin: 5% 5%;
-    border: 1px solid red ;
-    box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+
+    @include Block-menu__size ;
+    &-1{
+        background-color: map-get($color-background , menu1 );
+    }
+    &-2{
+        background-color: map-get($color-background , menu2 );
+    }
+    &-3{
+        background-color: map-get($color-background , menu3 );
+    }
+    &-4{
+        background-color: map-get($color-background , menu4 );
+    }
 }
+
 footer {
     display:flex;
     justify-content: space-between;

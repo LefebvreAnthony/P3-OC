@@ -1,0 +1,9 @@
+@mixin Block-menu__size {
+    padding: 10px 20px;
+    width: 33%;
+    height: 24.375rem;
+    justify-content: stretch;
+    margin: 5% 5%;
+    border: 1px solid red ;
+    box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+}

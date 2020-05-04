@@ -7,12 +7,12 @@ a {
   color: inherit;
 }
 
-.back_green {
+.background--color {
   color: #fdcb46;
   background-color: #579c87;
 }
 
-.ctn_global {
+.ctn {
   margin: 0 auto;
   max-width: 800px;
 }
@@ -26,7 +26,7 @@ a {
   margin: 0;
 }
 
-.ctn_mid {
+.ctn__mid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
