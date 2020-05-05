@@ -1,5 +1,31 @@
+.background--primary {
+  background-color: #579c87;
+}
+
+.menu-1 {
+  background-color: #fcdfdb;
+}
+
+.menu-2 {
+  background-color: #fff5fe;
+}
+
+.menu-3 {
+  background-color: #f9f9f9;
+}
+
+.menu-4 {
+  background-color: #fdfffd;
+}
+
 body {
   margin: auto;
+  font-size: 1.25rem;
+}
+
+h1, h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 a {
@@ -7,20 +33,18 @@ a {
   color: inherit;
 }
 
-.background--color {
+.background--primary {
   color: #fdcb46;
-  background-color: #579c87;
 }
 
 .ctn {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 50rem;
 }
 
 .header_ctn {
   padding: 2em 0 2em 0;
 }
-
 .header__h1 {
   text-align: center;
   margin: 0;
@@ -39,8 +63,36 @@ a {
   height: 24.375rem;
   justify-content: stretch;
   margin: 5% 5%;
-  border: 1px solid red;
   box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+}
+.menu--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 25rem;
+}
+.menu--title-2 {
+  background: linear-gradient(to bottom right, #d8852e 0%, #b48dfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--title-4 {
+  background: linear-gradient(to right, #42973c 0%, white 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 20rem;
+  margin: 3rem auto;
 }
 
 footer {

@@ -1,9 +1,10 @@
 $color-background: (
-    primary:#579c87,
-    menu1:#fcdfdb,
-    menu2:#fff5fe,
-    menu3:#f9f9f9,
-    menu4:#fdfffd);
+    background--primary:#579c87,
+    menu-1:#fcdfdb,
+    menu-2:#fff5fe,
+    menu-3:#f9f9f9,
+    menu-4:#fdfffd
+);
 
 
 
@@ -12,4 +13,10 @@ $color-background: (
 
 $color-text: (
     primary:#fdcb46,
-)
+    menu-2:(
+        first:#d8852e,
+        second:#6e4ccd,
+    ),
+    menu-3: #2140df,
+    menu-4: #42973c,
+);

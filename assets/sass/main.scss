@@ -5,6 +5,11 @@
 
 body{
     margin:auto;
+    font-size: 1.25rem;
+}
+h1, h2{
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 a{
     text-decoration: none;
@@ -17,14 +22,16 @@ a{
 }
 .ctn{
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 50rem;
 }
-.header_ctn {
-    padding: 2em 0 2em 0;
-}
-.header__h1 {
+.header{
+    &_ctn{
+        padding: 2em 0 2em 0;
+    }
+    &__h1{
     text-align:center;
     margin: 0;
+    }
 }
 .ctn__mid{
     display:flex;
@@ -33,22 +40,27 @@ a{
     padding: 5%;
 }
 .menu{
-
     @include Block-menu__size ;
-    &-1{
-        background-color: map-get($color-background , menu1 );
-    }
-    &-2{
-        background-color: map-get($color-background , menu2 );
-    }
-    &-3{
-        background-color: map-get($color-background , menu3 );
-    }
-    &-4{
-        background-color: map-get($color-background , menu4 );
+
+    &--title{
+        @include Block-menu__align;
+        height: 25rem;
+        &-2{
+            @include text-degraded;
+        }
+        &-4{
+            @include text-degraded4;
+        }
     }
 }
-
+.soon{
+    @include Block-menu__align;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem;
+    margin: 3rem auto;
+}
 footer {
     display:flex;
     justify-content: space-between;

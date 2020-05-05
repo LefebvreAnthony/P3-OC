@@ -1,9 +1,37 @@
+@import "./variables";
+
+
 @mixin Block-menu__size {
     padding: 10px 20px;
     width: 33%;
     height: 24.375rem;
     justify-content: stretch;
     margin: 5% 5%;
-    border: 1px solid red ;
     box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+}
+@each $color-background--menu in $color-background {
+    .#{nth($color-background--menu, 1)} {
+        background-color: nth($color-background--menu , 2 );
+    }
+}
+
+
+@mixin Block-menu__align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin text_degraded($color_left:#d8852e,$color_right:#b48dfa) {
+    background: linear-gradient(to bottom right, $color_left 0%, $color_right 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+@mixin text_degraded4($color_left:map-get($color-text, menu-4 ), $color_right:white){
+    background: linear-gradient(to right, $color_left 0%,$color_right 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
