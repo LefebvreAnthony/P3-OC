@@ -1,22 +1,36 @@
 $color-background: (
-    background--primary:#579c87,
+    primary:#579c87,
     menu-1:#fcdfdb,
     menu-2:#fff5fe,
     menu-3:#f9f9f9,
-    menu-4:#fdfffd
+    menu-4:#fdfffd,
 );
-
-
-
 
 
 
 $color-text: (
     primary:#fdcb46,
-    menu-2:(
-        first:#d8852e,
-        second:#6e4ccd,
-    ),
+    menu-1: #3c1218,
+    menu-2: #d8852e,
     menu-3: #2140df,
     menu-4: #42973c,
+);
+
+$menu__color: (
+    1: (
+        bg: #fcdfdb,
+        color: #3c1218,
+    ),
+    2: (
+        bg: #fff5fe,
+        color:#d8852e,
+    ),
+    3: (
+        bg: #f9f9f9,
+        color:#2140df,
+    ),
+    4: (
+        bg: #fdfffd,
+        color:#42973c,
+    ),
 );

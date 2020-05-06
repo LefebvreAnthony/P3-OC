@@ -23,6 +23,13 @@ a{
 .ctn{
     margin: 0 auto;
     max-width: 50rem;
+
+    &__mid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+    }
 }
 .header{
     &_ctn{
@@ -33,20 +40,18 @@ a{
     margin: 0;
     }
 }
-.ctn__mid{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5%;
-}
 .menu{
     @include Block-menu__size ;
+    @include menu--color($menu__color);
 
     &--title{
         @include Block-menu__align;
         height: 25rem;
         &-2{
             @include text-degraded;
+        }
+        &-3{
+            @include text-degraded(map-get($color-text,menu-3),#21a3df);
         }
         &-4{
             @include text-degraded4;

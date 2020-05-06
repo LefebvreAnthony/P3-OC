@@ -9,9 +9,12 @@
     margin: 5% 5%;
     box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
 }
-@each $color-background--menu in $color-background {
-    .#{nth($color-background--menu, 1)} {
-        background-color: nth($color-background--menu , 2 );
+@mixin menu--color ($menu__colors){
+    @each $color-menu, $menu__color in $menu__color{
+        &-#{$color-menu}{
+        background: map-get($menu__color , bg );
+        color: map-get($menu__color , color );
+        }
     }
 }
 
@@ -23,15 +26,14 @@
     text-align: center;
 }
 
-@mixin text_degraded($color_left:#d8852e,$color_right:#b48dfa) {
-    background: linear-gradient(to bottom right, $color_left 0%, $color_right 100%);
+@mixin text_degraded($color_left:#d8852e,$color_right:#2140df) {
+    background: linear-gradient(to bottom right, $color_left 30%, $color_right 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 @mixin text_degraded4($color_left:map-get($color-text, menu-4 ), $color_right:white){
-    background: linear-gradient(to right, $color_left 0%,$color_right 100%);
+    background: linear-gradient(to right, $color_left 50%,$color_right 95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
