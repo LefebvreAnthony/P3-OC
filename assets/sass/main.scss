@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./utils/mixins";
-
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/footer";
 
 
 body{
@@ -20,24 +22,29 @@ a{
     color: map-get($color-text , primary);
     background-color: map-get($color-background, primary);
 }
+.bold{
+    font-weight: bold;
+}
+ul{
+    
+    padding: 0 4rem;
+}
+li{
+    list-style-type: none;
+    @include flex__between;
+}
 .ctn{
     margin: 0 auto;
     max-width: 50rem;
 
     &__mid{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5%;
+        @include flex__between;
+        flex-wrap: wrap;
+        padding: 5%;
     }
-}
-.header{
-    &_ctn{
-        padding: 2em 0 2em 0;
-    }
-    &__h1{
-    text-align:center;
-    margin: 0;
+    &--page{
+        @include Block-menu__align;
+        margin: 4rem 3rem;
     }
 }
 .menu{
@@ -65,9 +72,4 @@ a{
     height: 3rem;
     width: 20rem;
     margin: 3rem auto;
-}
-footer {
-    display:flex;
-    justify-content: space-between;
-    padding: 0 1.5em;
 }

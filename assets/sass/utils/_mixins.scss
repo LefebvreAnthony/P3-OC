@@ -1,5 +1,6 @@
 @import "./variables";
 
+//size
 
 @mixin Block-menu__size {
     padding: 10px 20px;
@@ -9,13 +10,10 @@
     margin: 5% 5%;
     box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
 }
-@mixin menu--color ($menu__colors){
-    @each $color-menu, $menu__color in $menu__color{
-        &-#{$color-menu}{
-        background: map-get($menu__color , bg );
-        color: map-get($menu__color , color );
-        }
-    }
+@mixin flex__between {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
@@ -24,6 +22,17 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+ //colors
+
+@mixin menu--color ($menu__colors){
+    @each $color-menu, $menu_color in $menu__colors{
+        &-#{$color-menu}{
+        background: map-get($menu_color , bg );
+        color: map-get($menu_color , color );
+        font-family: map-get($menu_color , txt), cursive;
+        }
+    }
 }
 
 @mixin text_degraded($color_left:#d8852e,$color_right:#2140df) {
