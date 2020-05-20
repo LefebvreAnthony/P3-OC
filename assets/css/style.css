@@ -1,38 +1,13 @@
-body {
-  margin: auto;
-}
-
-.back_green {
-  color: #fdcb46;
-  background-color: #579c87;
-}
-
-.ctn_global {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 .header_ctn {
   padding: 2em 0 2em 0;
 }
-
 .header__h1 {
   text-align: center;
   margin: 0;
-}
-
-.ctn_mid {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5% 20%;
-}
-
-.menu {
-  padding: 10px 20px;
-  width: 33%;
-  height: 300px;
-  justify-content: stretch;
-  margin: 10px 10px;
 }
 
 footer {
@@ -41,9 +16,126 @@ footer {
   padding: 0 1.5em;
 }
 
-
-/*à ENLEVER*/
-
-.border_red {
-    border: 1px red solid;
+body {
+  margin: auto;
+  font-size: 1.25rem;
 }
+
+h1, h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a .style--m1 {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+}
+
+.background--primary {
+  color: #fdcb46;
+  background-color: #579c87;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  padding: 0 4rem;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ctn {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+.ctn__mid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.ctn--menu {
+  font-family: "Caveat", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem 3rem;
+}
+
+.menu {
+  padding: 10px 20px;
+  width: 33%;
+  height: 24.375rem;
+  justify-content: stretch;
+  margin: 5% 5%;
+  box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+}
+.menu-1 {
+  background: #fcdfdb;
+  color: #3c1218;
+  font-family: "Caveat", cursive;
+}
+.menu-2 {
+  background: #fff5fe;
+  color: #d8852e;
+  font-family: "Croissant One", cursive;
+}
+.menu-3 {
+  background: #f9f9f9;
+  color: #2140df;
+  font-family: "Great Vibes", cursive;
+}
+.menu-4 {
+  background: #fdfffd;
+  color: #42973c;
+  font-family: "Kaushan Script", cursive;
+}
+.menu--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 25rem;
+}
+.menu--title-2 {
+  background: linear-gradient(to bottom right, #d8852e 30%, #2140df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--title-3 {
+  background: linear-gradient(to right, #2140df 0%, #21a3df 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--title-4 {
+  background: linear-gradient(to right, #42973c 0%, #bfff7e 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 20rem;
+  margin: 3rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

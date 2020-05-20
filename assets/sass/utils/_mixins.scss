@@ -1,0 +1,47 @@
+@import "./variables";
+
+//size
+
+@mixin Block-menu__size {
+    padding: 10px 20px;
+    width: 33%;
+    height: 24.375rem;
+    justify-content: stretch;
+    margin: 5% 5%;
+    box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+}
+@mixin flex__between {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@mixin Block-menu__align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+ //colors
+
+@mixin menu--color ($menu__colors){
+    @each $color-menu, $menu_color in $menu__colors{
+        &-#{$color-menu}{
+        background: map-get($menu_color , bg );
+        color: map-get($menu_color , color );
+        font-family: map-get($menu_color , txt), cursive;
+        }
+    }
+}
+
+@mixin text_degraded($color_left:#d8852e,$color_right:#2140df) {
+    background: linear-gradient(to bottom right, $color_left 30%, $color_right 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+@mixin text_degraded3($color_left:map-get($color-text, menu-4 ), $color_right:#bfff7e){
+    background: linear-gradient(to right, $color_left 0%,$color_right 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
