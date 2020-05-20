@@ -24,11 +24,17 @@ body {
 h1, h2 {
   font-weight: normal;
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+a .style--m1 {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
 }
 
 .background--primary {
@@ -60,7 +66,8 @@ li {
   flex-wrap: wrap;
   padding: 5%;
 }
-.ctn--page {
+.ctn--menu {
+  font-family: "Caveat", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,12 +116,12 @@ li {
   -webkit-text-fill-color: transparent;
 }
 .menu--title-3 {
-  background: linear-gradient(to bottom right, #2140df 30%, #21a3df 100%);
+  background: linear-gradient(to right, #2140df 0%, #21a3df 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu--title-4 {
-  background: linear-gradient(to right, #42973c 50%, white 95%);
+  background: linear-gradient(to right, #42973c 0%, #bfff7e 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

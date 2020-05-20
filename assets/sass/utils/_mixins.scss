@@ -16,7 +16,6 @@
     
 }
 
-
 @mixin Block-menu__align {
     display: flex;
     flex-direction: column;
@@ -41,8 +40,8 @@
     -webkit-text-fill-color: transparent;
 
 }
-@mixin text_degraded4($color_left:map-get($color-text, menu-4 ), $color_right:white){
-    background: linear-gradient(to right, $color_left 50%,$color_right 95%);
+@mixin text_degraded3($color_left:map-get($color-text, menu-4 ), $color_right:#bfff7e){
+    background: linear-gradient(to right, $color_left 0%,$color_right 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
