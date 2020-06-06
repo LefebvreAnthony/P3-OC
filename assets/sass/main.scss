@@ -1,0 +1,81 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/footer";
+
+
+body{
+    margin:auto;
+    font-size: 1.25rem;
+}
+h1, h2{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+.style--m1{
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    letter-spacing: -0.07rem;
+}  
+}
+.background--primary {
+    color: map-get($color-text , primary);
+    background-color: map-get($color-background, primary);
+}
+.bold{
+    font-weight: bold;
+}
+ul{
+    
+    padding: 0 4rem;
+}
+li{
+    list-style-type: none;
+    @include flex__between;
+}
+.ctn{
+    margin: 0 auto;
+    max-width: 50rem;
+
+    &__mid{
+        @include flex__between;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    &--menu{
+        font-family:'Caveat', cursive;
+        @include Block-menu__align;
+        margin: 4rem 3rem;
+    }
+}
+.menu{
+    @include Block-menu__size ;
+    @include menu--color($menu__color);
+
+    &--title{
+        @include Block-menu__align;
+        height: 25rem;
+        &-2{
+            @include text-degraded;
+        }
+        &-3{
+            @include text-degraded3(map-get($color-text,menu-3),#21a3df);
+        }
+        &-4{
+            @include text-degraded3;
+        }
+    }
+}
+.soon{
+    @include Block-menu__align;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem;
+    margin: 3rem auto;
+}
