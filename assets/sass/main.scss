@@ -12,7 +12,7 @@ body{
 h1, h2{
     font-weight: normal;
     font-size: 1.5rem;
-    margin-bottom: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -52,11 +52,22 @@ li{
         @include Block-menu__align;
         margin: 4rem 3rem;
     }
+    &--menu2{
+        font-size: 0.8em;
+        font-family: 'PT Serif', serif;
+        background-color: #fcdfdb;
+    }
+}
+section{
+    width: 100%;
 }
 .menu{
     @include Block-menu__size ;
     @include menu--color($menu__color);
-
+    &-Kingsize{
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
     &--title{
         @include Block-menu__align;
         height: 25rem;
@@ -79,6 +90,28 @@ li{
     width: 20rem;
     margin: 3rem auto;
 }
-.BorderM-Droit{
-    transform: scaleX(-1);
+.category-title{
+    
+    h2{
+    width: 60%;
+    }
+    display: flex;
+    &--border{
+
+        width: 100%;
+
+    }
+    &--borderD{
+
+        transform: scaleX(-1);
+
+    }
+}
+.note{
+    width: 3em;
+    &-bot{
+        vertical-align: middle;
+        width: 1em;
+        padding-right: 0.3em;
+    }
 }

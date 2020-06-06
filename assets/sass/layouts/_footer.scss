@@ -2,4 +2,14 @@
 footer {
     @include flex__between;
     padding: 0 1.5em;
+    position: fixed;
+    bottom: 0;
+    width: 740px;
+    margin: 0;
+    div{
+        width: 33%;
+    }
+}
+.start-right{
+    text-align: right;
 }

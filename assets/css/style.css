@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-.header_ctn {
-  padding: 2em 0 2em 0;
+header {
+  padding: 1em 0;
 }
-.header__h1 {
+header h1 {
+  height: 3em;
   text-align: center;
-  margin: 0;
+}
+header img {
+  height: 100%;
+  width: 33%;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   padding: 0 1.5em;
+  position: fixed;
+  bottom: 0;
+  width: 740px;
+  margin: 0;
+}
+footer div {
+  width: 33%;
+}
+
+.start-right {
+  text-align: right;
 }
 
 body {
@@ -24,7 +40,7 @@ body {
 h1, h2 {
   font-weight: normal;
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a {
@@ -74,6 +90,15 @@ li {
   text-align: center;
   margin: 4rem 3rem;
 }
+.ctn--menu2 {
+  font-size: 0.8em;
+  font-family: "PT Serif", serif;
+  background-color: #fcdfdb;
+}
+
+section {
+  width: 100%;
+}
 
 .menu {
   padding: 10px 20px;
@@ -102,6 +127,10 @@ li {
   background: #fdfffd;
   color: #42973c;
   font-family: "Kaushan Script", cursive;
+}
+.menu-Kingsize {
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 .menu--title {
   display: flex;
@@ -138,8 +167,26 @@ li {
   margin: 3rem auto;
 }
 
-.BorderM-Droit {
+.category-title {
+  display: flex;
+}
+.category-title h2 {
+  width: 60%;
+}
+.category-title--border {
+  width: 100%;
+}
+.category-title--borderD {
   transform: scaleX(-1);
+}
+
+.note {
+  width: 3em;
+}
+.note-bot {
+  vertical-align: middle;
+  width: 1em;
+  padding-right: 0.3em;
 }
 
 /*# sourceMappingURL=style.css.map */
