@@ -1,10 +1,12 @@
-
-.header{
-    &_ctn{
-        padding: 2em 0 2em 0;
+ header{
+        padding: 1em 0;
+        h1{
+            
+            height: 3em;
+            text-align: center;
+        }
+        img{
+            height: 100%;
+            width: 33%;
+        }
     }
-    &__h1{
-    text-align:center;
-    margin: 0;
-    }
-}
