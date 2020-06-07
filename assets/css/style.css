@@ -144,6 +144,9 @@ section {
   font-size: 2em;
   margin-bottom: 1em;
 }
+.menu-3__bg {
+  background-color: #edefef;
+}
 .menu--title {
   display: flex;
   flex-direction: column;

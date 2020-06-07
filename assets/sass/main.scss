@@ -68,6 +68,9 @@ section{
         font-size: 2em;
         margin-bottom: 1em;
     }
+    &-3__bg{
+        background-color: #edefef;
+    }
     &--title{
         @include Block-menu__align;
         height: 25rem;
