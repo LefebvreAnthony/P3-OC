@@ -33,7 +33,11 @@
         }
     }
 }
-
+@each $menu2__colors, $colors--text in $menu2__color {
+        .#{$menu2__colors}{
+            color:($colors--text);
+        }
+    }
 @mixin text_degraded($color_left:#d8852e,$color_right:#2140df) {
     background: linear-gradient(to bottom right, $color_left 30%, $color_right 100%);
     -webkit-background-clip: text;

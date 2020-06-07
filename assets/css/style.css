@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.entrees {
+  color: #c67412;
+}
+
+.plats {
+  color: #a56799;
+}
+
+.desserts {
+  color: #6e4ccc;
+}
+
 header {
   padding: 1em 0;
 }
