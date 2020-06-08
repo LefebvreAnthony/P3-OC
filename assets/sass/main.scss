@@ -64,6 +64,10 @@ section{
 .menu{
     @include Block-menu__size ;
     @include menu--color($menu__color);
+    &--btn:hover{
+        transform: scale(1.15);
+        opacity: 0.5;
+    }
     &-Kingsize{
         font-size: 2em;
         margin-bottom: 1em;
@@ -74,6 +78,9 @@ section{
     &--title{
         @include Block-menu__align;
         height: 25rem;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 500ms;
         &-2{
             @include text-degraded;
         }

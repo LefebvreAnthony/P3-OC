@@ -140,6 +140,10 @@ section {
   color: #42973c;
   font-family: "Kaushan Script", cursive;
 }
+.menu--btn:hover {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
 .menu-Kingsize {
   font-size: 2em;
   margin-bottom: 1em;
@@ -153,6 +157,9 @@ section {
   justify-content: center;
   text-align: center;
   height: 25rem;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
 }
 .menu--title-2 {
   background: linear-gradient(to bottom right, #d8852e 30%, #2140df 100%);
