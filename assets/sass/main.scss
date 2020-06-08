@@ -50,12 +50,32 @@ li{
     &--menu{
         font-family:'Caveat', cursive;
         @include Block-menu__align;
-        margin: 4rem 3rem;
+        margin: 4rem 3rem 8rem 3rem;
+        
+        & span{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0%;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background: black;
+                transition: width 700ms ease;
+            }
+            &:hover:after{
+                width: 100%;
+            }
+        }
     }
     &--menu2{
         font-size: 0.8em;
         font-family: 'PT Serif', serif;
         background-color: #fcdfdb;
+        & h2{
+            font-size: 1.2em;
+        }
     }
 }
 section{
@@ -65,12 +85,12 @@ section{
     @include Block-menu__size ;
     @include menu--color($menu__color);
     &--btn:hover{
-        transform: scale(1.15);
+        transform: scale(1.30);
         opacity: 0.5;
     }
     &-Kingsize{
-        font-size: 2em;
-        margin-bottom: 1em;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
     &-3__bg{
         background-color: #edefef;
@@ -79,8 +99,7 @@ section{
         @include Block-menu__align;
         height: 25rem;
         transform: scale(1);
-        transition-property: transform;
-        transition-duration: 500ms;
+        transition: transform 500ms;
         &-2{
             @include text-degraded;
         }
@@ -98,7 +117,7 @@ section{
     border-radius: 0.5rem;
     height: 3rem;
     width: 20rem;
-    margin: 3rem auto;
+    margin: 0 auto 7.2rem auto;
 }
 .category-title{
     
@@ -118,10 +137,10 @@ section{
     }
 }
 .note{
-    width: 3em;
+    width: 4rem;
     &-bot{
         vertical-align: middle;
-        width: 1em;
-        padding-right: 0.3em;
+        width: 2rem;
+        padding-right: 0.5rem;
     }
 }
