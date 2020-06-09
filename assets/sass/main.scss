@@ -119,6 +119,19 @@ section{
     width: 20rem;
     margin: 0 auto 7.2rem auto;
 }
+.load{
+    padding-bottom: 0.5rem;
+    &__point{
+        font-size: 3rem;
+        animation: points $anim-dur both infinite;
+        animation-direction: alternate;
+        @for $i from 1 through $num-points {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+}
 .category-title{
     
     h2{

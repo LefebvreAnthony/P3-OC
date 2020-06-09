@@ -10,6 +10,15 @@ footer {
         width: 33%;
     }
 }
-.start-right{
+.start{
+    &-left{
+    transform-origin: 25% 25%;
+    }
+    &-right{
     text-align: right;
+    transform-origin: 75% 75%;
+    }
+}
+.wiggle:hover{
+    animation: anim-wiggle 300ms infinite;
 }

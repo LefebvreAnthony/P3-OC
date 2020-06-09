@@ -1,3 +1,5 @@
+//colors
+
 $color-background: (
     primary:#579c87,
     menu-1:#fcdfdb,
@@ -44,3 +46,12 @@ $menu2__color: (
     plats: #a56799,
     desserts: #6e4ccc,
 );
+
+
+
+//animation soon
+$anim-dur: 1000ms;
+$num-points: 3;
+$anim-delay: $anim-dur / $num-points;
+
+//animation wiggle
