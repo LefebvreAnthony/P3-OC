@@ -64,10 +64,10 @@ header img {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.5em;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
-  width: 740px;
+  width: 50rem;
   margin: 0;
 }
 footer div {
@@ -287,6 +287,69 @@ section {
   vertical-align: middle;
   width: 2rem;
   padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 65rem) {
+  body {
+    font-size: 2.25rem;
+  }
+
+  .ctn {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  .ctn h2 {
+    font-size: 2.5rem;
+  }
+  .ctn__mid {
+    margin: 10rem 0;
+    width: 100%;
+    padding: 1rem 0;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 80%;
+  }
+
+  header h1 {
+    height: 3%;
+  }
+  header img {
+    width: 50%;
+  }
+
+  footer {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  li {
+    padding: 0 1rem;
+  }
+
+  ul {
+    text-align: left;
+    padding: 0 0.3rem;
+  }
+  ul .bold {
+    padding-left: 1.1rem;
+  }
+}
+@media screen and (max-width: 35rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  .ctn__mid {
+    margin: 3rem 0 8rem 0;
+  }
+
+  .category-title h2 {
+    width: 250%;
+    font-size: 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

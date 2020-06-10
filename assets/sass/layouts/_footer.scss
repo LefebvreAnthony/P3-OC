@@ -1,10 +1,10 @@
 
 footer {
     @include flex__between;
-    padding: 0 1.5em;
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
-    width: 740px;
+    width: 50rem;
     margin: 0;
     div{
         width: 33%;
